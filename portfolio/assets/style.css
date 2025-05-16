@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  }
+ html{
+  scroll-behavior: smooth;
+ }
+ body {
+  overflow-x: hidden; 
+}
+
+ /*button top*/
+ #Back-to-top{
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right:50px;
+  padding: 1em;
+  background-color:#fff;
+  color: #19152c;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+ }
+
+ #Back-to-top:hover{
+  opacity: 0.7;
+ }
+
+   /*cor scrollbar*/
+::-webkit-scrollbar{
+  width: 12px;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #19152c;
+  border-radius:2em;
+}
+    /*fim cor scrollbar*/
+
+
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  gap: 2em;
+  }
+  
+
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  .img_logo_header{
+    width: 45px;
+  }
+  .header,
+  .navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header{
+    background-color: var(--color-dark2);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 3.5em;
+    color:#fff;
+    box-shadow: 1px 1px 4px var(--color-dark4);
+  }
+  .navigation_header{
+    gap: 3em;
+    z-index: 2;
+  }
+  .content{
+    padding-top: 5em;
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+  }
+  .navigation_header a{
+    text-decoration: none;
+    color: var(--color-purple);
+    transition: 1s;
+    font-weight: bold;
+  }
+  .navigation_header a:hover{
+    color: var(--color-white);
+  }
+  .active{
+    background: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .navigation_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+  }
+  @keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+  }
+
+  .background{
+    background-image: url(/portfolio/assets/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*main*/
+  .container-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+  }
+  
+  .texto-main{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2em;
+  
+  }
+
+  .texto-main h1{
+    font-size:50px;
+  }
+
+   
+  .texto-main h2{
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    width: 40%;
+    padding: .3em;
+    border: solid 1px #fff;
+  }
+
+  .texto-main p {
+    font-size: 19px;
+  }
+
+  .img-main img {
+    padding:5em;
+    width:30em;
+  }
+
+  .redes-main i{
+   font-size: 28px;
+   transition: .5s linear ;
+  } 
+  .redes-main{
+    display: flex;
+    gap: 1.1em;
+    cursor: pointer;
+    align-items: center;
+     transition: .5s linear;
+  }
+
+  .redes-main i:hover{
+    color:#a4508b;
+  }
+
+  /*fim main*/
+  
+
+  /*inicio habilidades*/
+.background-habilidades{
+    background-image: linear-gradient(50deg, #0a0a0a, #19152c, #0a0a0a);
+    padding: 3em 0em 3em 0em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+  .container-habilidades{
+    background-color:#12171a;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 2em;
+    gap:3em;
+   
+    border-radius: 2.5em;
+    bottom: 6em;
+    position: relative;
+    text-align: center;  
+  }
+
+  .texto-habilidade p{
+    max-width: 70%;
+    font-size: 19px;
+  }
+
+  .texto-habilidade{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+  }
+    
+  .texto-habilidade h1{
+    font-size:40px;
+  }
+
+  .habilidades i{
+    font-size: 60px;
+    transition: .5s;
+    cursor: pointer;
+  }
+  .habilidades i:hover{
+    opacity: 0.4;
+  }
+  .habilidades{
+     display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+/*fim habildade*/
+
+
+
+
+
+
+
+
+/*card*/
+  
+ 
+
+  .title-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    gap: 2em;
+    flex-direction: column;
+  }
+  .title-projetos p{
+    color: #fff;
+    text-align: center;
+    max-width: 40%;
+  }
+  .title-projetos h1{
+    color:#fff;
+    font-size: 3em;
+  }
+
+ .container-projetos{
+ background-color:#0a0a0a;
+ padding:0em 0em 5em 0;
+ 
+ }
+.text-column a{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+ .wrap-projetos{
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+ .card {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 1em;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+
+.text-column{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  align-items:center;
+  justify-content: center;
+ 
+}
+
+.button-text {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 60%;
+  cursor: pointer;
+  padding: .5em;
+}
+
+
+.overlay-text {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  max-width: 300px;
+}
+
+ /*fim card*/
+
+ .container-footer{
+  background-image: linear-gradient(50deg, #0a0a0a, #19152c, #0a0a0a);
+  color: #fff;
+  padding: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  
+ }
+ .contato-footer{
+display: flex;
+font-size:2.3em;
+  gap:1em; 
+  align-items: center;
+  justify-content: center;
+ }
+
+ .logo-footer{
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+ }
+
+
+ .logo-footer i{
+  transition: .5s linear;
+  cursor: pointer;
+ 
+ }
+
+.logo-footer i:hover{
+  color:#a4508b;
+
+}
+ .email p{
+  color: gray;
+  margin-bottom: 1em;
+ }
+
+
+ 
+
+
+/*responnsivo*/
+ @media(max-width:999px){
+    .container-main{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    .habilidades {
+      gap: 2em;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      
+    }
+      
+   
+    .texto-habilidade p {
+      max-width: 100%;   
+    }
+
+
+
+   
+
+    .img-main img{
+      max-width:20em;
+    }
+    .texto-main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      width: 90%;
+    
+    }
+    .bemvindo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top:5em;
+      
+    }
+    .texto{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      letter-spacing:2px;
+    
+    }
+    .background-habilidades{
+      padding: 1em;
+  
+    }
+      
+
+   .title-projetos p{
+     max-width:100%;
+   }
+
+
+  .card{
+    width: 90%;
+  }
+  
+
+
+   .container-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    flex-wrap: wrap;
+   }
+
+   
+ }

@@ -1,0 +1,477 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   
+    background-color: #16161a;
+    font-family: "Inter", sans-serif;
+}
+
+
+.back{
+  background-image: url(/portfolio/assets/background.svg);
+  
+    background-repeat: no-repeat;
+    padding-bottom: 7em;
+    
+}
+
+
+.header,.navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.header{
+    color: #fff;
+    justify-content: space-between;
+    padding: 0 10%;
+    height:6em;
+    font-family: "Cinzel", sans-serif;
+  
+}
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+
+/*main*/
+.content{
+    padding-top: 3em;
+    height: 100%;
+    transition: 1s;
+  
+}
+
+.sobre-content{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-left: 4em;
+    
+   
+}
+.sobre-content h1 {
+    font-size: 4em;
+    max-width: 60%;
+    font-family: "Cinzel", sans-serif;
+    color: #fff;
+    
+}
+.sobre-content p {
+    color: gray;
+    line-height: 1.3em;
+    font-size: 21px;
+    max-width: 45%;
+    font-weight: bold;
+}
+
+video{
+    max-width:30%;
+}
+
+.buttons-sobre{
+    display: flex;
+    gap: 1.2em;
+}
+
+#btn-primary {
+    width: 176px;
+    height: 56px;
+    background: #5092d2;
+    border-radius: 5px;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #16161a;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+  }
+  
+  #btn-primary:hover {
+    opacity: 0.7;
+  }
+
+
+  #btn-secondary {
+    width: 140px;
+    height: 56px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    transition: 0.3s;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+  }
+  
+  #btn-secondary:hover {
+    opacity: 0.7;
+  }
+
+/*fim main*/
+
+/*second section*/
+.second-section{
+    text-align: center;
+
+}
+
+.second-section h2{
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 38px;
+    line-height: 65px;
+    padding: 2em;
+   
+}
+.container-carousel {
+    display: flex;
+    justify-content: space-around;
+
+   
+  }
+  
+  .container-items {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .carousel-item {
+    width: 250px;
+    height: 360px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  
+  .carousel-item:hover {
+    opacity: 1;
+  }
+  
+  .carousel-item::after {
+    content: "";
+    width: 100%;
+    height: 80%;
+    background: #27272e;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    transform: 0.3s;
+  }
+  
+  .carousel-item:hover::after {
+    border: 1px solid #5092d2;
+  }
+  
+  .item {
+    width: 250px;
+    height: 360px;
+  }
+  
+  .item-name {
+    position: absolute;
+    bottom: 12px;
+  
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 32px;
+    line-height: 43px;
+  }
+  
+  .arrow:hover {
+    opacity: 0.7;
+    cursor: pointer}
+
+    /*secon section*/
+
+/*container-trhee*/
+
+.text{
+    max-width: 100%;
+    color: #fff;
+    line-height: 1.4em;
+    line-height: bold;
+    font-size: 19px;
+}
+
+.container-description h2{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 1em;
+}
+.container-trhee{
+display: flex;
+justify-content: space-between;
+padding: 3em;
+margin-top: 5em;
+background-image: url(/portfolio/assets/background-2.svg);
+background-position: center;
+background-repeat: no-repeat;
+align-items: center;
+flex-wrap: wrap;
+
+  
+}
+
+
+
+.container-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+   
+ .container-photos img:hover{
+    opacity: 0.6;
+ }
+
+.img{
+    width: 320px;
+    transition: .6s ease-in-out;
+}
+
+.container-description{
+  
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    
+}
+
+
+
+
+
+/*container-three*/
+
+
+/*weapons*/
+.weapons{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+
+
+.tittle-armas h1 {
+    font-size: 2em;
+    color: #fff;
+    font-family: "Cinzel", sans-serif;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-weapon{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+.sobre-weapon h2{
+    color: #fff;
+    font-size: 2em;
+}
+.sobre-weapon p {
+    color: gray;
+    max-width: 90%;
+    font-size:19px;
+    font-weight: bold;
+}
+
+.container-weapons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+.weapon{
+    background: #27272e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: .5em;
+    width: 800px;
+}
+
+.img-weapon img {
+    height: 320px;
+    width: 200px;
+}
+
+
+
+.img-weapon{
+    transform: translate(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/*weapons*/
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-purple);
+    transition: 1s;
+    font-weight: bold;
+}
+.navigation_header a:hover{
+    color: var(--color-white);
+}
+.active{
+    background: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+   
+    .sobre-content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+       margin-left: 0;
+    }  
+
+    .sobre-content h1{
+        max-width:70%;
+    }
+
+    .sobre-content p {
+        max-width: 80%;
+    }
+   
+    .sobre-content h1{
+        font-size: 3em;
+    }
+
+    .container-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-trhee{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        max-width: 100%;
+    }
+
+
+    .container-description{
+        max-width: 100%;
+        text-align: center;
+      
+    }
+
+    .text{
+        max-width: 100%;
+      
+    }
+
+    .weapon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1em;
+        flex-direction: column;
+    }
+
+
+
+    .sobre-weapon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div
+
+   
+    .navigation_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+
+    .container-photos{
+        display: flex;
+       
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
+
