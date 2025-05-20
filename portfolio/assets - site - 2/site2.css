@@ -11,7 +11,7 @@ body{
 
 
 .back{
-  background-image: url(/portfolio/assets/background.svg);
+  background-image: url(/portfolio/assets/Images/background.svg);
   
     background-repeat: no-repeat;
     padding-bottom: 7em;
@@ -220,13 +220,14 @@ video{
 .container-trhee{
 display: flex;
 justify-content: space-between;
-padding: 3em;
+padding: 5em;
 margin-top: 5em;
-background-image: url(/portfolio/assets/background-2.svg);
+background-image: url(/portfolio/assets/Images/background-2.svg);
 background-position: center;
 background-repeat: no-repeat;
 align-items: center;
 flex-wrap: wrap;
+background-size: contain;
 
   
 }

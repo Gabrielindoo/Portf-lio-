@@ -162,7 +162,7 @@
   }
 
   .background{
-    background-image: url(/portfolio/assets/banner-bg.png);
+    background-image: url(/portfolio/assets/Images/banner-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -379,6 +379,7 @@
 }
 
 
+
 .overlay-text {
   color: #fff;
   font-size: 20px;
@@ -387,6 +388,143 @@
 }
 
  /*fim card*/
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Estilo do botão */
+
+
+/* Modal */
+body.modal-open {
+  overflow: hidden;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #a3392d;
+  transition: 1s linear;
+}
+
+/* Estilo do botão */
+.button-text {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/*fim botao modal*/
+
+
+/*animação modal*/
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* MODAL BASE */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ESCONDE O MODAL */
+.modal.hidden {
+  display: none;
+}
+
+/* CONTEÚDO DO MODAL */
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+/* QUANDO O MODAL ENTRAR */
+.modal.show .modal-content {
+  animation-name: fadeIn;
+}
+
+/* QUANDO O MODAL SAIR */
+.modal.hide .modal-content {
+  animation-name: fadeOut;
+}
+/*fim animção modal*/
 
  .container-footer{
   background-image: linear-gradient(50deg, #0a0a0a, #19152c, #0a0a0a);
